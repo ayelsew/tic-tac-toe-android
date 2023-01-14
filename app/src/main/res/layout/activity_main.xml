@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#222222"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/button0"
@@ -21,11 +21,13 @@
             android:layout_height="91dp"
             android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
+            android:backgroundTint="#219DEB"
             android:fontFamily="@font/roboto_black"
             android:onClick="onClick0"
             android:text="O"
             android:textAlignment="center"
             android:textSize="48sp"
+            app:cornerRadius="8dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,6 +37,7 @@
             android:layout_height="91dp"
             android:layout_marginStart="96dp"
             android:layout_marginTop="4dp"
+            android:backgroundTint="#219DEB"
             android:fontFamily="@font/roboto_black"
             android:onClick="onClick1"
             android:text="X"
@@ -49,6 +52,7 @@
             android:layout_height="91dp"
             android:layout_marginStart="188dp"
             android:layout_marginTop="4dp"
+            android:backgroundTint="#219DEB"
             android:fontFamily="@font/roboto_black"
             android:onClick="onClick2"
             android:text="X"
@@ -63,6 +67,7 @@
             android:layout_height="91dp"
             android:layout_marginStart="4dp"
             android:layout_marginTop="86dp"
+            android:backgroundTint="#219DEB"
             android:fontFamily="@font/roboto_black"
             android:onClick="onClick3"
             android:text="X"
@@ -77,6 +82,7 @@
             android:layout_height="91dp"
             android:layout_marginStart="96dp"
             android:layout_marginTop="86dp"
+            android:backgroundTint="#219DEB"
             android:fontFamily="@font/roboto_black"
             android:onClick="onClick4"
             android:text="O"
@@ -86,13 +92,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-
         <Button
             android:id="@+id/button5"
             android:layout_width="89dp"
             android:layout_height="91dp"
             android:layout_marginStart="188dp"
             android:layout_marginTop="86dp"
+            android:backgroundTint="#219DEB"
             android:fontFamily="@font/roboto_black"
             android:onClick="onClick5"
             android:text="X"
@@ -107,6 +113,7 @@
             android:layout_height="91dp"
             android:layout_marginStart="4dp"
             android:layout_marginTop="168dp"
+            android:backgroundTint="#219DEB"
             android:fontFamily="@font/roboto_black"
             android:onClick="onClick6"
             android:text="X"
@@ -121,6 +128,7 @@
             android:layout_height="91dp"
             android:layout_marginStart="96dp"
             android:layout_marginTop="168dp"
+            android:backgroundTint="#219DEB"
             android:fontFamily="@font/roboto_black"
             android:onClick="onClick7"
             android:text="X"
@@ -135,6 +143,7 @@
             android:layout_height="91dp"
             android:layout_marginStart="188dp"
             android:layout_marginTop="168dp"
+            android:backgroundTint="#219DEB"
             android:fontFamily="@font/roboto_black"
             android:onClick="onClick8"
             android:text="O"
@@ -144,19 +153,21 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_black"
         android:text="Hello World!"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.102" />
+        app:layout_constraintVertical_bias="0.117" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
